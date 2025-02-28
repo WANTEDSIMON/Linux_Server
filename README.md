@@ -79,7 +79,7 @@ To add remaning rules is SSH back to server and include:
 
 ---
 
-#### 1. Extra 
+#### 1. Extra "A script file for the automation of firewall installation and configuration"
 
 We can proboly make a script like "setup_ufw.sh"
 
@@ -103,6 +103,12 @@ Command to use,
 4. Execute the script to configure UFW:
 ```./setup_ufw.sh```
 
+---
+
+### 2. Extra "Install ACL" ACL (Access Control Lists)
+```
+sudo apt-get install acl
+```
 ---
 
 ### 6. Add user gropes to the server
