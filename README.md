@@ -81,7 +81,9 @@ To add remaning rules is SSH back to server and include:
 
 #### 1. Extra 
 
-We can proboly make a 
+We can proboly make a script like "setup_ufw.sh"
+
+example code is in: Executable Scripts/setup_ufw.sh
 
 
 
