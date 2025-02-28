@@ -111,11 +111,11 @@ sudo apt-get install acl
 ```
 ---
 
-### 6. Add user gropes to the server
+### 6. Add gropes to the server
 
 The only thing necesary is a "Limited User" to administer Webbserver and an account with "Administrative permissions". But I am going to spice the installation a litle bit.
 
-1. Create a group for Users
+Create the groups for Users
 - Teacher group:
 ```sudo addgroup teachers```
 
