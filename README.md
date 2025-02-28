@@ -105,5 +105,37 @@ Command to use,
 
 ---
 
+### 6. Add user gropes to the server
+
+The only thing necesary is a "Limited User" to administer Webbserver and an account with "Administrative permissions". But I am going to spice the installation a litle bit.
+
+1. Create a group for Users
+- Teacher group:
+```sudo addgroup teachers```
+
+- Dev group:
+```sudo addgroup dev```
+
+3. Creater users for
+- Teacher users:
+```
+sudo adduser teacher1
+sudo adduser teacher2
+```
+
+- Dev user
+```sudo adduser developer1```
+
+
+5. Add users to groups
+- Teacher group:
+```
+sudo usermod -aG teachers teacher1
+sudo usermod -aG teachers teacher2
+```
+
+- Dev group:
+```sudo usermod -aG dev developer1```
+
 
 
