@@ -1,6 +1,6 @@
 # Linux_Server
 
-1. Buy Server from Contabo
+### 1. Buy Server from Contabo
 
 It is a Cloud VPS 4C,
 4 vCPU Cores
@@ -13,13 +13,13 @@ Unlimited Incoming
 
 ---
 
-2. Start usin WSL localy
+### 2. Start usin WSL localy
 
 Run terminal, from command line use: `wsl`, using `wsl` is all so what we use to start marchin later. 
 
 Use command `wsl -d Ubuntu` to select what operatin system I want the machine to use. 
 
-If you want to use another distro use `wsl -d <distro>` <distro> use the (specify distro) you want to use.
+If you want to use another distro use `wsl -d <distro>` **distro** use the (specify distro) you want to use.
 
 Command:
 `wsl`
@@ -41,13 +41,13 @@ Install WSL with a specified distro
 
 ---
 
-3. Now we try and simplify SSH connectivity with server.
+### 3. Now we try and simplify SSH connectivity with server.
 
-Insted of running command: `ssh root@<IP>`, <IP> apply ip from contabo, we change a file that is stored localy in wsl, it is called the host file.
+Insted of running command: `ssh root@<IP>`, **IP** apply ip from contabo, we change a file that is stored localy in wsl, it is called the host file.
 
 The file is stored  `/etc/hosts` we use `nano /etc/hosts` to open file. Add the following there`<IP> myserver`. Save and Exit, Press CTRL+O (Write Out), Press Enter (Confirm Save) and Press CTRL+X (Exit nano). 
 
-4. Now we can connect with server using `myserver`.
+Now we can connect with server using `myserver`.
 
 ```
 ssh root@myserver
@@ -55,7 +55,7 @@ ssh root@myserver
 
 ---
 
-5. Next set up fire wall with UFW
+### 5. Next set up fire wall with UFW
 
 UFW is all ready installed but not activ, running `sudo ufw status` result in the outcome: `Status: inactive`.
 
@@ -74,7 +74,7 @@ Next for the assigment is as well add port to allow connection over http then ad
 To add remaning rules is SSH back to server and include:
 
 6. ```sudo ufw allow http```																					
-7. ```sudo ufw allow <port>/tcp``` <port> use youre portumber.
+7. ```sudo ufw allow <port>/tcp``` **port** use youre portumber.
 8. ```sudo reboot```
 
 ---
