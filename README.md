@@ -85,5 +85,25 @@ We can proboly make a script like "setup_ufw.sh"
 
 example code is in: Executable Scripts/setup_ufw.sh
 
+Command to use,
+
+1. Create script file:
+```touch setup_ufw.sh```
+
+2. Add neccesary permissions
+```chmod 744 setup_ufw.sh```
+
+3. open file to inclode the code from "Scripts/setup_ufw.sh"
+```nano setup_ufw.sh```
+- Save and Exit
+- Press CTRL+O (Write Out)
+- Press Enter (Confirm Save)
+- Press CTRL+X (Exit nano)
+
+4. Execute the script to configure UFW:
+```./setup_ufw.sh```
+
+---
+
 
 
