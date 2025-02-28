@@ -79,5 +79,9 @@ To add remaning rules is SSH back to server and include:
 
 ---
 
+#### 1. Extra 
+
+We can proboly make a 
+
 
 
