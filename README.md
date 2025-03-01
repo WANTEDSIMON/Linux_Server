@@ -129,11 +129,27 @@ sudo adduser teacher1
 sudo adduser teacher2
 ```
 
+Give the teachers name: T-1 and then T-2 with random generated Passwords
+
+And
+
+Give developer user name: Dev1 with random generated Passwords
+
 - Dev user
 ```sudo adduser developer1```
 
+4. As I dont know what "Permition" exakt the Teachers need I give them full acces with:
 
-5. Add users to groups
+```bash
+sudo setfacl -R -m g:teachers:rwx /
+```
+```bash
+sudo setfacl -R -d -m g:teachers:rwx /
+```
+
+5. 
+
+6. Add users to groups
 - Teacher group:
 ```
 sudo usermod -aG teachers teacher1
