@@ -147,6 +147,11 @@ sudo setfacl -R -m g:teachers:rwx /
 sudo setfacl -R -d -m g:teachers:rwx /
 ```
 
+Key Considerations
+Security Risks: Giving unrestricted access to an entire server, even to a trusted group, can lead to accidental or intentional issues. Root access should be limited and carefully monitored.
+
+This is a Server is for my Assignment so we say it is a "LAB" envierment so it is applied on a non-production server. Before applying changes globally.
+
 5. 
 
 6. Add users to groups
