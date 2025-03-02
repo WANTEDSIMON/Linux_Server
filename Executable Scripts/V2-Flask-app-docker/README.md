@@ -1,5 +1,5 @@
 
-# Usin docker localy with (flask)
+# Using docker localy with (flask)
 
 1. First install docker
 Installed from: https://www.docker.com/
