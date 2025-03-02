@@ -18,6 +18,35 @@ Localy on Windows, link to version: https://www.python.org/downloads/release/pyt
 py -m pip install flask
 ```
 
+5. Create app.py
+```sh
+echo. > app.py
+```
+
+6. Open code editor I use Visual Studio
+```sh
+start devenv .
+```
+> [!NOTE]
+> Opened the project in VS Code:```code .```
+
+7. Add the code to app.py
+```py
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return '<h1>Hello World</h1>'
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+"app.run(debug=True)" only in development, but disable it in production:
+```py
+app.run(debug=False)
+```
 
 
  
