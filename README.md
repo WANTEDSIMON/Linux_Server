@@ -152,14 +152,39 @@ Security Risks: Giving unrestricted access to an entire server, even to a truste
 
 This is a Server is for my Assignment so we say it is a "LAB" envierment so it is applied on a non-production server. Before applying changes globally.
 
-5. 
+Hade as expexted at least what information what was given the rwx to / , So hade to 
 
-6. Add users to groups
+1. Fix Permissions
+```bash
+chmod 644 /etc/sudo.conf
+```
+
+2. Fix the Owner (If Needed)
+```bash
+chown root:root /etc/sudo.conf
+```
+
+5. Add the Limited User permision to group dev for Developer user
+
+
+7. Add users to groups
 - Teacher group:
 ```
 sudo usermod -aG teachers teacher1
 sudo usermod -aG teachers teacher2
 ```
+
+Change Primary Group to teachers
+"teacher1" - `sudo usermod -g teachers teacher1`
+"teacher2" - `sudo usermod -g teachers teacher2`
+
+Delete the Old Group
+"teacher1" - `sudo groupdel teacher1`
+"teacher1" -`sudo groupdel teacher2`
+
+Chek if Deleted
+"teacher1" - `getent group teacher1`
+"teacher2" - `getent group teacher2`
 
 - Dev group:
 ```sudo usermod -aG dev developer1```
