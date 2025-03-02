@@ -1,4 +1,4 @@
-# Code to build app
+# Code to build app using **flask** localy
 
 1. Make folder to work in,
 ```bash
