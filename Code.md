@@ -10,7 +10,7 @@ mkdir Flask_Hello_Docker-Apache
 cd Flask_Hello_Docker-Apache
 ```
 
-3. Install Python 3.13.2
+3. Install Python 3.13.2 I
 Localy on Windows, link to version: https://www.python.org/downloads/release/python-3132/
 
 4. Install flask
@@ -47,6 +47,12 @@ if __name__ == '__main__':
 ```py
 app.run(debug=False)
 ```
+
+8. Run the application with:
+```sh
+py app.py
+```
+
 
 
  
