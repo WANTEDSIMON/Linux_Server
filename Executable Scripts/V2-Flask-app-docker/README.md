@@ -86,8 +86,10 @@ docker images
 ```sh
 docker rmi flask-app
 ```
-Untagged: flask-app:latest
+
+Untagged: flask-app:latest  
 Deleted: sha256:9e26a01eaa59639f4e7afa8956d7db89043d29886ff325b3671229cd30072d4d
+
 
 ---
 
