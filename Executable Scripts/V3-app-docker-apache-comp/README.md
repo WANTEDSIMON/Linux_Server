@@ -26,8 +26,6 @@ services:
     ports:
       - "80:80"
     restart: unless-stopped
-    volumes:
-      - ./website:/usr/local/apache2/htdocs
 ```
 run app with:
 
