@@ -36,3 +36,10 @@ minimum app :
 
 
 ![image](https://github.com/user-attachments/assets/f87d3be7-8cea-4428-b812-b82ee162629a)
+
+What’s New in v2?
+🔹 Custom index.html (no default Apache page).
+
+
+
+
