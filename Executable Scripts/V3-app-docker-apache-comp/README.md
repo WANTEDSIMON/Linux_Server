@@ -29,7 +29,11 @@ services:
     volumes:
       - ./website:/usr/local/apache2/htdocs
 ```
+run app with:
 
+docker-compose up -d --build
+
+go to localhost
 minimum app :
 
 
