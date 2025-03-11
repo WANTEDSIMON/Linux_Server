@@ -30,6 +30,7 @@ services:
       - ./website:/usr/local/apache2/htdocs
 ```
 
+minimum app :
 
 
-
+![image](https://github.com/user-attachments/assets/f87d3be7-8cea-4428-b812-b82ee162629a)
