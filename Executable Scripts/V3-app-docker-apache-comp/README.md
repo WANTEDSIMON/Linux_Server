@@ -31,7 +31,7 @@ run app with:
 
 docker-compose up -d --build
 
-go to localhost
+go to localhost, http://localhost/
 minimum app :
 
 
