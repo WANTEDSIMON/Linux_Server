@@ -88,6 +88,12 @@ mkdir website
 
 ```
 
+6. Command when done:
+```
+docker-compose down
+docker-compose up -d --build
+```
+
 Result image:
 
 ![image](https://github.com/user-attachments/assets/b24ac64a-bb38-48fa-b6c4-b5766a6c7c5e)
