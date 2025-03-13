@@ -1,0 +1,10 @@
+services:
+  apache:
+    build: .
+    container_name: apache_container
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    volumes:
+      - ./website:/usr/local/apache2/htdocs  # Mounts website files into Apache
+      
