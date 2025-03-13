@@ -138,6 +138,28 @@ Give developer user name: Dev1 with random generated Passwords
 - Dev user
 ```sudo adduser developer1```
 
+```Give sudo privleges
+sudo usermod -aG sudo teacher1
+sudo usermod -aG sudo teacher2
+```
+
+Webpage
+
+install docker on server:
+```
+sudo apt update && sudo apt install -y docker.io docker-compose
+sudo systemctl enable --now docker
+
+```
+
+
+
+
+
+Extra
+---
+
+
 4. As I dont know what "Permition" exakt the Teachers need I give them full acces with:
 
 ```bash
@@ -174,6 +196,7 @@ sudo usermod -aG teachers teacher1
 sudo usermod -aG teachers teacher2
 ```
 
+---
 Change Primary Group to teachers
 "teacher1" - `sudo usermod -g teachers teacher1`
 "teacher2" - `sudo usermod -g teachers teacher2`
